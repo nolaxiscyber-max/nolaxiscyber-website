@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0f19;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+header {
+    background: #05070d;
+    padding: 20px 0;
+    border-bottom: 1px solid #007bff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #dce7ff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c2ff;
+}
+
+.hero {
+    padding: 110px 0;
+    background: linear-gradient(135deg, #0b0f19 0%, #081b33 55%, #003b73 100%);
+    text-align: left;
+}
+
+.hero h2 {
+    font-size: 48px;
+    max-width: 850px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 750px;
+    color: #d7e6ff;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #ffffff;
+    padding: 14px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00c2ff;
+    color: #05070d;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.services {
+    background: #101827;
+}
+
+section h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.service-card {
+    background: #0b1220;
+    border: 1px solid #1e3a5f;
+    padding: 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #00c2ff;
+    margin-bottom: 12px;
+    font-size: 23px;
+}
+
+.service-card p {
+    color: #d7e6ff;
+}
+
+.about {
+    background: #0b0f19;
+}
+
+.about p {
+    max-width: 800px;
+    color: #d7e6ff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.about ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.about li {
+    background: #101827;
+    border-left: 4px solid #007bff;
+    margin-bottom: 12px;
+    padding: 14px;
+    color: #ffffff;
+}
+
+.contact {
+    background: linear-gradient(135deg, #081b33, #003b73);
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #d7e6ff;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #05070d;
+    text-align: center;
+    padding: 20px;
+    color: #9fb7d9;
+    border-top: 1px solid #007bff;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}

@@ -19,8 +19,11 @@ body {
 
 header {
     background: #05070d;
-    padding: 20px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #007bff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -29,10 +32,24 @@ header .container {
     align-items: center;
 }
 
-header h1 {
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 48px;
+    width: auto;
+    max-width: 70px;
+    object-fit: contain;
+}
+
+.logo-container span {
+    font-size: 24px;
+    font-weight: bold;
     color: #ffffff;
-    font-size: 26px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 nav a {
@@ -40,6 +57,7 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 nav a:hover {
@@ -47,7 +65,7 @@ nav a:hover {
 }
 
 .hero {
-    padding: 110px 0;
+    padding: 95px 0;
     background: linear-gradient(135deg, #0b0f19 0%, #081b33 55%, #003b73 100%);
     text-align: left;
 }
@@ -64,6 +82,15 @@ nav a:hover {
     max-width: 750px;
     color: #d7e6ff;
     margin-bottom: 35px;
+}
+
+.hero-banner {
+    width: 100%;
+    max-width: 760px;
+    display: block;
+    margin: 45px auto 0;
+    border-radius: 10px;
+    border: 1px solid #1e3a5f;
 }
 
 .btn {
@@ -87,6 +114,10 @@ section {
 
 .services {
     background: #101827;
+}
+
+.who-we-help {
+    background: #0b0f19;
 }
 
 section h2 {
@@ -114,7 +145,7 @@ section h2 {
 }
 
 .about {
-    background: #0b0f19;
+    background: #101827;
 }
 
 .about p {
@@ -130,7 +161,7 @@ section h2 {
 }
 
 .about li {
-    background: #101827;
+    background: #0b1220;
     border-left: 4px solid #007bff;
     margin-bottom: 12px;
     padding: 14px;
@@ -146,6 +177,16 @@ section h2 {
     font-size: 18px;
     color: #d7e6ff;
     margin-bottom: 15px;
+}
+
+.contact ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+    color: #ffffff;
 }
 
 footer {
@@ -164,6 +205,20 @@ footer {
 
     nav a {
         margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .logo {
+        height: 42px;
+        max-width: 60px;
+    }
+
+    .logo-container span {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 70px 0;
     }
 
     .hero h2 {
@@ -173,41 +228,9 @@ footer {
     .hero p {
         font-size: 17px;
     }
-}
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo {
-    height: 55px;
-    width: auto;
-}
-
-.logo-container span {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-}
-
-.hero-banner {
-    width: 100%;
-    max-width: 1000px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-}
-
-.who-we-help {
-    background: #101827;
-}
-
-.contact ul {
-    list-style: none;
-    margin: 20px 0;
-}
-
-.contact li {
-    margin-bottom: 10px;
+    .hero-banner {
+        max-width: 100%;
+        margin-top: 35px;
+    }
 }

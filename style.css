@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #0b0f19;
@@ -19,7 +23,7 @@ body {
 
 header {
     background: #05070d;
-    padding: 14px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #007bff;
     position: sticky;
     top: 0;
@@ -35,33 +39,24 @@ header .container {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 12px;
-}
-
-.logo {
-    height: 62px;
-    width: auto;
-    max-width: 95px;
-    object-fit: contain;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
     gap: 14px;
     text-decoration: none;
 }
 
+.logo {
+    height: 72px;
+    width: auto;
+    max-width: 105px;
+    object-fit: contain;
+}
+
 .logo-container span {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
     color: #ffffff;
     letter-spacing: 0.5px;
 }
-.logo {
-    height: 48px;
-    max-width: 75px;
-}
+
 nav a {
     color: #dce7ff;
     text-decoration: none;
@@ -75,7 +70,7 @@ nav a:hover {
 }
 
 .hero {
-    padding: 95px 0;
+    padding: 90px 0;
     background: linear-gradient(135deg, #0b0f19 0%, #081b33 55%, #003b73 100%);
     text-align: left;
 }
@@ -111,6 +106,7 @@ nav a:hover {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+    margin: 10px 0 20px;
 }
 
 .btn:hover {
@@ -128,6 +124,10 @@ section {
 
 .who-we-help {
     background: #0b0f19;
+}
+
+.about {
+    background: #101827;
 }
 
 section h2 {
@@ -152,14 +152,21 @@ section h2 {
 
 .service-card p {
     color: #d7e6ff;
+    margin-bottom: 12px;
 }
 
-.about {
-    background: #101827;
+.service-card ul {
+    margin-top: 12px;
+    margin-left: 22px;
+    color: #d7e6ff;
+}
+
+.service-card li {
+    margin-bottom: 8px;
 }
 
 .about p {
-    max-width: 800px;
+    max-width: 850px;
     color: #d7e6ff;
     margin-bottom: 20px;
     font-size: 18px;
@@ -191,12 +198,16 @@ section h2 {
 
 .contact ul {
     list-style: none;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .contact li {
     margin-bottom: 10px;
     color: #ffffff;
+}
+
+.contact a {
+    color: #00c2ff;
 }
 
 footer {
@@ -219,16 +230,17 @@ footer {
     }
 
     .logo {
-        height: 42px;
-        max-width: 60px;
+        height: 58px;
+        max-width: 90px;
     }
 
     .logo-container span {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .hero {
         padding: 70px 0;
+        text-align: left;
     }
 
     .hero h2 {
@@ -242,5 +254,9 @@ footer {
     .hero-banner {
         max-width: 100%;
         margin-top: 35px;
+    }
+
+    section h2 {
+        font-size: 28px;
     }
 }

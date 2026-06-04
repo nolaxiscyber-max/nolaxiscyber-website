@@ -207,7 +207,13 @@ section h2 {
 }
 
 .contact a {
-    color: #00c2ff;
+    color: #4db8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #ffffff;
 }
 
 footer {

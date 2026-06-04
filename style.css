@@ -174,3 +174,40 @@ footer {
         font-size: 17px;
     }
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+}
+
+.logo-container span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-banner {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.who-we-help {
+    background: #101827;
+}
+
+.contact ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
